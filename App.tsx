@@ -1,5 +1,5 @@
 import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
+import { StyleSheet, Text, View, Pressable } from 'react-native';
 import { Pantalla } from './src/components/Pantalla';
 import { Pantalla2 } from './src/components/Pantalla2';
 import { BotonOperacion } from './src/components/BotonOperacion';
@@ -75,5 +75,5 @@ const styles = StyleSheet.create({
     marginBottom:16,
     paddingHorizontal:10,
     width: '100%',
-  }
+  },
 });
