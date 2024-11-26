@@ -51,7 +51,7 @@ export default function App() {
       <BotonOperacion label='+' width={80} onPress={operacionSumar}></BotonOperacion>
     </View>
     <View style={styles.fila}>
-      <BotonOperacion label='0' width={165} onPress={() =>construirNumero('si')}></BotonOperacion>
+      <BotonOperacion label='0' width={165} onPress={() =>construirNumero('0')}></BotonOperacion>
       <BotonOperacion label='.' width={80} onPress={() =>construirNumero('.')}></BotonOperacion>
       <BotonOperacion label='=' width={80} onPress={resultado}></BotonOperacion>
     </View>
