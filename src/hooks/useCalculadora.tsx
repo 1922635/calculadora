@@ -98,6 +98,10 @@ export const useCalculadora = () =>{
                 return num1 * num2;
 
             case Operadores.dividir:
+                if (num2 === 0)
+                {
+                    return "indefinido";
+                }
                 return num1 / num2;
 
             default:
