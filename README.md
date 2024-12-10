@@ -4,7 +4,7 @@
 
 ## Instrucciones de instalación
 
->[!Warning]
+>[!Warning]-
 >Es necesario tener React Native previamente instalado en el equipo para iniciar la aplicación.  
 >Es necesario disponer de un dispositivo móvil (o emulador) correctamente configurado para poder probar la aplicación.  
 >Para más información:  
