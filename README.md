@@ -11,6 +11,8 @@
 >[Documentación React Native](https://reactnative.dev/docs/set-up-your-environment)  
 >[Documentación Expo Go](https://docs.expo.dev/get-started/set-up-your-environment)  
 
+#### Pasos a seguir
+
 1. Abrir la terminal en el directorio principal del proyecto.
 2. Ejecutar el comando: npm install
 3. Ejecutar el comando: npm run start
