@@ -20,6 +20,10 @@ export const GlobalStyles = StyleSheet.create({
     botonOtros: {
         backgroundColor: Colores.botonesOtro
     },
+    boton0: {
+        backgroundColor: Colores.botonesNumero,
+        width: 165,
+    },
     pantallaPrincipal: {
         fontSize: 70,
         textAlign: 'right',
@@ -30,4 +34,18 @@ export const GlobalStyles = StyleSheet.create({
         fontSize: 40,
         fontWeight: 300,
     },
+    container: {
+        flex: 1,
+        backgroundColor: '#fff',
+        alignItems:  'center',
+        justifyContent: 'flex-end',
+        paddingBottom:20,
+      },
+      fila: {
+        flexDirection: 'row',
+        justifyContent: "space-around",
+        marginBottom:16,
+        paddingHorizontal:10,
+        width: '100%',
+      },
 })

@@ -1,6 +1,7 @@
 import {useRef, useState, useEffect} from 'react';
+import * as Haptics from 'expo-haptics';
 
-enum Operadores {
+export enum Operadores {
     sumar = '+',
     restar = '-',
     multiplicar = '*',
@@ -71,24 +72,10 @@ export const useCalculadora = () =>{
         setNumero('0');
     }
 
-    const operacionDividir = () => {
-        establecerUltimoNumero();
-        UltimaOperacion.current = Operadores.dividir;
-    }
 
-    const operacionMultiplicar = () => {
+    const operacionCalcular = (operacion: Operadores) => {
         establecerUltimoNumero();
-        UltimaOperacion.current = Operadores.multiplicar;
-    }
-
-    const operacionRestar = () => {
-        establecerUltimoNumero();
-        UltimaOperacion.current = Operadores.restar;
-    }
-
-    const operacionSumar = () => {
-        establecerUltimoNumero();
-        UltimaOperacion.current = Operadores.sumar;
+        UltimaOperacion.current = operacion;
     }
 
     const calcularResultado = () => {
@@ -96,6 +83,7 @@ export const useCalculadora = () =>{
 
         const num1 = Number(primerValor);
         const num2 = Number(segundoValor);
+        Haptics.impactAsync();
 
         if (isNaN(num2)) return num1;
 
@@ -152,16 +140,13 @@ export const useCalculadora = () =>{
 
     return {
         // Propiedades
-        formula, numero, numeroAnterior,
+        formula, numero, numeroAnterior, 
         //Metodos
         construirNumero,
         clean,
         cambiarSigno,
         borrarDigito,
-        operacionDividir,
-        operacionMultiplicar,
-        operacionRestar,
-        operacionSumar,
+        operacionCalcular,
         calcularResultado,
         resultado
     }
