@@ -1,6 +1,6 @@
 # Calculadora 
 
->[!INFO]+ Autor
+>[!Info]+ Autor
 >José Manuel Muñoz Ros
 
 ## Instrucciones de instalación
