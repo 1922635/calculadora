@@ -1,7 +1,7 @@
 # Calculadora 
 
->[!note] Autor
->José Manuel Muñoz Ros
+>[!note] 
+>Autor: José Manuel Muñoz Ros
 
 ## Instrucciones de instalación
 
